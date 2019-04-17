@@ -1,0 +1,11 @@
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\bin\Debug\netstandard2.0\XF.ListViewDetalle.deps.json
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\bin\Debug\netstandard2.0\XF.ListViewDetalle.dll
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\bin\Debug\netstandard2.0\XF.ListViewDetalle.pdb
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\XF.ListViewDetalle.csproj.CoreCompileInputs.cache
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\XF.ListViewDetalle.AssemblyInfoInputs.cache
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\XF.ListViewDetalle.AssemblyInfo.cs
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\XamlC.stamp
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\XF.ListViewDetalle.dll
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\XF.ListViewDetalle.pdb

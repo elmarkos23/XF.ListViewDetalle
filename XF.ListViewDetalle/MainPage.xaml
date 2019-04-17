@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XF.ListViewDetalle"
+             x:Class="XF.ListViewDetalle.MainPage"
+             Title="ListView Desplegable">
+
+    <ContentPage.BindingContext>
+        <local:MainViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <ListView
+            x:Name="lvDatos"
+            HasUnevenRows="True" 
+                      IsVisible="True" 
+                      VerticalOptions="Fill"
+                      ItemsSource="{Binding Personas}" 
+            ItemTapped="LvDatos_ItemTapped">
+            <ListView.Header>
+                <StackLayout Orientation="Horizontal" BackgroundColor="Gray">
+                    <Label Text="Id" HorizontalOptions="Start" TextColor="White" FontAttributes="Bold"/>
+                    <Label Text="Nombre" HorizontalOptions="FillAndExpand" TextColor="White" FontAttributes="Bold"/>
+                </StackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding id}" HorizontalOptions="Start"/>
+                                <Label Text="{Binding Nombre}" HorizontalOptions="FillAndExpand"/>
+                                <Image Source="{Binding Icono}" HorizontalOptions="End"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Ocupacion,StringFormat='Ocupación: {0}'}" IsVisible="{Binding IsVisible}"/>
+                                <Label Text="{Binding Hobbie,StringFormat='Hobbie: {0}'}" IsVisible="{Binding IsVisible}"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
