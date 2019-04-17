@@ -23,32 +23,23 @@ namespace XF.ListViewDetalle
             persona.Icono = "up.png";
             Update(persona);
         }
-        private void Update(DatosPersona persona)
+        public void Update(DatosPersona persona)
         {
+            int index=0;
             if (personaSelected != null)
             {
                 //antiguo dato
-                int index_old = Personas.IndexOf(personaSelected);
+                index = Personas.IndexOf(personaSelected);
                 Personas.Remove(personaSelected);
                 personaSelected.Icono = "down.png";
                 personaSelected.IsVisible = false;
-                Personas.Insert(index_old, personaSelected);
-
-                //nuevo dato
-                int index = Personas.IndexOf(persona);
-                Personas.Remove(persona);
-                Personas.Insert(index, persona);
-
-                personaSelected = persona;
+                Personas.Insert(index, personaSelected);
             }
-            else
-            {
-                //nuevo dato
-                int index = Personas.IndexOf(persona);
-                Personas.Remove(persona);
-                Personas.Insert(index, persona);
-                personaSelected = persona;
-            }
+            //nuevo dato
+            index = Personas.IndexOf(persona);
+            Personas.Remove(persona);
+            Personas.Insert(index, persona);
+            personaSelected = persona;
         }
     }
 }
