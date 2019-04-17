@@ -49,29 +49,6 @@ namespace XF.ListViewDetalle
                 Personas.Insert(index, persona);
                 personaSelected = persona;
             }
-            
-            
-            
-            
-            
-            //if (personaSelected == persona)
-            //{
-            //    persona.IsVisible = !persona.IsVisible;
-            //    Update(persona);
-            //}
-            //else
-            //{
-            //    if (personaSelected != null)
-            //    {
-            //        personaSelected.IsVisible = true;
-            //        Update(personaSelected);
-            //    }
-            //    persona.IsVisible = true;
-            //    Update(persona);
-            //}
-            //personaSelected = persona;
-
-            
         }
     }
 }
