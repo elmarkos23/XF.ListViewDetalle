@@ -12,6 +12,7 @@ namespace XF.ListViewDetalle
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainViewModel();
             
         }
 

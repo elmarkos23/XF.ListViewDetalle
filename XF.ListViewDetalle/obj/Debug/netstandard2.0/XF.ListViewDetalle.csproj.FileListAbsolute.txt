@@ -10,3 +10,4 @@ D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\net
 D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\XF.ListViewDetalle.dll
 D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\XF.ListViewDetalle.pdb
 D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\XF.ListViewDetalle.csprojAssemblyReference.cache
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\obj\Debug\netstandard2.0\PagListViewNormal.xaml.g.cs

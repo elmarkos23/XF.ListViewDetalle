@@ -11,7 +11,7 @@ namespace XF.ListViewDetalle
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new PagListViewNormal());
         }
 
         protected override void OnStart()
