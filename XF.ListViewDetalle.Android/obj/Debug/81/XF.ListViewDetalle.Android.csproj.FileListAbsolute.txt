@@ -104,4 +104,6 @@ D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle.Android\obj\D
 D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
 D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle.Android\obj\Debug\81\android\assets\XF.ListViewDetalle.Android.pdb
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle\bin\Debug\netstandard2.0\XF.ListViewDetalle.dll
+D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle.Android\bin\Debug\XF.ListViewDetalle.dll.mdb
 D:\GitHub\XF.ListViewDetalle\XF.ListViewDetalle\XF.ListViewDetalle.Android\obj\Debug\81\linksrc\XF.ListViewDetalle.dll.mdb

@@ -18,11 +18,18 @@ namespace XF.ListViewDetalle
         public PagListViewNormal()
         {
             InitializeComponent();
-            Personas = new ObservableCollection<DatosPersona> {
-            new DatosPersona{ id=1,Nombre="Jendri Ponce",IsVisible=false,Hobbie="Ajedres",Ocupacion="Freelance", Icono="down.png"},
-            new DatosPersona{ id=2,Nombre="Marco Ayala",IsVisible=false,Hobbie="Voly",Ocupacion="Desarrollo Apps", Icono="down.png"},
-            new DatosPersona{ id=3,Nombre="Xavier Herrera",IsVisible=false,Hobbie="Autos",Ocupacion="Analista de compras", Icono="down.png"}
-            };
+            Personas = new ObservableCollection<DatosPersona>();
+            for (int i = 0; i <= 100; i++)
+            {
+                Personas.Add(new DatosPersona { id = i, Nombre = "Jendri Ponce", IsVisible = false, Hobbie = "Ajedres", Ocupacion = "Freelance", Icono = "down.png" });
+            }
+
+            //Personas = new ObservableCollection<DatosPersona> {
+         
+            //new DatosPersona{ id=1,Nombre="Jendri Ponce",IsVisible=false,Hobbie="Ajedres",Ocupacion="Freelance", Icono="down.png"},
+            //new DatosPersona{ id=2,Nombre="Marco Ayala",IsVisible=false,Hobbie="Voly",Ocupacion="Desarrollo Apps", Icono="down.png"},
+            //new DatosPersona{ id=3,Nombre="Xavier Herrera",IsVisible=false,Hobbie="Autos",Ocupacion="Analista de compras", Icono="down.png"}
+            //};
             lvDatos.ItemsSource = Personas;
         }
 
