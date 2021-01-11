@@ -4,7 +4,7 @@
              x:Class="XF.ListViewDetalle.PagListViewNormal"
              Title="Lista Normal Desplegable">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="5">
             <ListView
             x:Name="lvDatos"
             HasUnevenRows="True" 
@@ -15,16 +15,19 @@
                     <StackLayout Orientation="Horizontal" BackgroundColor="Black">
                         <Label Text="Id" HorizontalOptions="Start" TextColor="White" FontAttributes="Bold"/>
                         <Label Text="Nombre" HorizontalOptions="FillAndExpand" TextColor="White" FontAttributes="Bold"/>
-                    </StackLayout>
+                        <Label Text="Fecha" HorizontalOptions="End" TextColor="White" FontAttributes="Bold"/>
+                        <Label Text="Edad" HorizontalOptions="FillAndExpand" TextColor="White" FontAttributes="Bold"/>
+          </StackLayout>
                 </ListView.Header>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Text="{Binding id}" HorizontalOptions="Start"/>
-                                    <Label Text="{Binding Nombre}" HorizontalOptions="FillAndExpand"/>
-                                    <Image Source="{Binding Icono}" HorizontalOptions="End"/>
+                                    <Label Text="{Binding Nombre}" />
+                  <Button Style="{DynamicResource btnPrimary}" Text="Quitar" x:Name="btnQuitar" Clicked="btnQuitar_Clicked" CommandParameter="{Binding .}" HeightRequest="35" WidthRequest="80" VerticalOptions="Center"/>
+                  <Button Style="{DynamicResource btnSecundario}" Text="Agregar" x:Name="btnAgregar" Clicked="btnAgregar_Clicked" CommandParameter="{Binding .}" HeightRequest="50" WidthRequest="80" VerticalOptions="Center"/>
+                  <Entry Text="{Binding Age}" />
                                 </StackLayout>
                                 <StackLayout Orientation="Vertical">
                                     <Label Text="{Binding Ocupacion,StringFormat='Ocupación: {0}'}" IsVisible="{Binding IsVisible}"/>

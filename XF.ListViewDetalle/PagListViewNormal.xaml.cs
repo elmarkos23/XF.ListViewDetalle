@@ -21,7 +21,7 @@ namespace XF.ListViewDetalle
             Personas = new ObservableCollection<DatosPersona>();
             for (int i = 0; i <= 100; i++)
             {
-                Personas.Add(new DatosPersona { id = i, Nombre = "Jendri Ponce", IsVisible = false, Hobbie = "Ajedres", Ocupacion = "Freelance", Icono = "down.png" });
+                Personas.Add(new DatosPersona { id = i, Nombre = "Jendri Ponce", IsVisible = false, Hobbie = "Ajedres", Ocupacion = "Freelance", Icono = "down.png" , Fecha = DateTime.Now });
             }
 
             //Personas = new ObservableCollection<DatosPersona> {
@@ -37,7 +37,12 @@ namespace XF.ListViewDetalle
         {
             var persona = e.Item as DatosPersona;
 
-            Hide(persona);
+          int index = Personas.IndexOf(persona);
+          Personas[index].Age += 1;
+      lvDatos.ItemsSource = null;
+      lvDatos.ItemsSource = Personas;
+
+        //Hide(persona);
         }
         public void Hide(DatosPersona persona)
         {
@@ -52,17 +57,35 @@ namespace XF.ListViewDetalle
             {
                 //antiguo dato
                 index = Personas.IndexOf(personaSelected);
+                Personas[index].Age += 1;
+        
                 Personas.Remove(personaSelected);
                 personaSelected.Icono = "down.png";
                 personaSelected.IsVisible = false;
                 Personas.Insert(index, personaSelected);
             }
-            //nuevo dato
-            index = Personas.IndexOf(persona);
-            Personas.Remove(persona);
-            Personas.Insert(index, persona);
-            personaSelected = persona;
+            ////nuevo dato
+            //index = Personas.IndexOf(persona);
+            //Personas.Remove(persona);
+            //Personas.Insert(index, persona);
+            //personaSelected = persona;
             lvDatos.ItemsSource = Personas;
         }
+
+    private void btnQuitar_Clicked(object sender, EventArgs e)
+    {
+
     }
+
+    private void btnAgregar_Clicked(object sender, EventArgs e)
+    {
+      var b = (Button)sender;
+      var item = b.CommandParameter as DatosPersona;
+
+      int index = Personas.IndexOf(item);
+      Personas[index].Age += 1;
+      lvDatos.ItemsSource = null;
+      lvDatos.ItemsSource = Personas;
+    }
+  }
 }

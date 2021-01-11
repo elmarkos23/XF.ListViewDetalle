@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BJc9fzZaRGwiAoAim+BkdKeSaZHmh6Na4Dx5Fr1hBwQSrl20+hUJ+YP26dHp/eGwHe6YCQE2MmDmFBo6wAUXmQ==",
+  "success": true,
+  "projectFilePath": "D:\\GitHub\\XF.ListViewDetalle\\XF.ListViewDetalle\\XF.ListViewDetalle.iOS\\XF.ListViewDetalle.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\xamarin.forms\\3.4.0.1008975\\xamarin.forms.3.4.0.1008975.nupkg.sha512"
+  ],
+  "logs": []
+}
